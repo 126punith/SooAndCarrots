@@ -3,4 +3,5 @@ export let colorCode = {
   darkBlue: '#1D2939',
   primary: '#253BFF',
   red: '#f10c07',
+  blueGrey: '#F9FAFB',
 };

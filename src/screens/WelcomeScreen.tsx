@@ -12,7 +12,7 @@ import CustomButton from '../reuseableComponents/CustomButton';
 import {colorCode} from '../configs/Colors';
 const {height, width} = Dimensions.get('screen');
 
-const WelcomeScreen = () => {
+const WelcomeScreen = (props) => {
   return (
     <ImageBackground
       source={ImagePath.welcomeScreenBg}
@@ -23,6 +23,9 @@ const WelcomeScreen = () => {
       </View>
       <CustomButton
         buttonStyles={{
+          onPress:() => {
+            props.navigation.navigate('Sign Up')
+           },
           activeOpacity: 0.8,
           style: [
             styles.button,
@@ -42,7 +45,6 @@ const WelcomeScreen = () => {
       </CustomButton>
       <CustomButton
         buttonStyles={{
-          activeOpacity: 0.8,
           style: [
             styles.button,
             {
