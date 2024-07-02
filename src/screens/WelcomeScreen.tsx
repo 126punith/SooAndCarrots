@@ -76,7 +76,7 @@ const styles = StyleSheet.create({
     gap: 16,
     paddingTop: width * 0.9,
   },
-  title: {position: 'absolute', top: '5%', left: '22.5%'},
+  title: {position: 'absolute', top: '5%', left: '5%'},
   titleText: {
     fontSize: 36,
     fontWeight: '800',

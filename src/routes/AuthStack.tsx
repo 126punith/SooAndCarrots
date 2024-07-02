@@ -5,6 +5,7 @@ import {
 } from '@react-navigation/stack';
 import SignUpScreen from '../screens/SignUpScreen';
 import WelcomeScreen from '../screens/WelcomeScreen';
+import CompetitionSelection from '../screens/CompetitionSelection';
 
 const Stack = createStackNavigator();
 const AuthStack: FC = () => {
@@ -22,6 +23,11 @@ const AuthStack: FC = () => {
       <Stack.Screen
         name="Sign Up"
         component={SignUpScreen}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="CompetitionSelection"
+        component={CompetitionSelection}
         options={{headerShown: false}}
       />
     </Stack.Navigator>

@@ -79,17 +79,19 @@ const styles = StyleSheet.create({
     width: 24,
   },
   textInput: {
-    paddingLeft: 4,
     fontSize: 16,
-    lineHeight: 21.82,
-    fontWeight: '700',
+    lineHeight: 16,
+    fontWeight: '400',
     color: '#66615C',
     paddingVertical: 17,
+    width: '90%',
   },
   errorText: {
-    fontSize: 10,
+    fontSize: 14,
+    lineHeight: 18,
     color: colorCode.red,
     fontWeight: '700',
     marginTop: 5,
+    paddingLeft: 5,
   },
 });
